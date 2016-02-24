@@ -1,0 +1,11 @@
+<h2> $category.getName() </h2>
+
+<ul>
+#foreach ($task in $category.getTasks())
+<li>$task.getDescription()</li>
+#end
+</ul>
+
+<a href="/categories">Return to category list</a>
+</br>
+<a href="/categories/$category.getId()/tasks/new">Add New Task</a>
